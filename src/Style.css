@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.header {
+  margin: 0;
+  padding: 0 20px;
+  height: 5rem;
+  background-color: #f28482;
+  display: flex;
+  justify-content: space-between;
+}
+.footer {
+  height: 3rem;
+  background-color: #f28482;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 1rem;
+  margin-top: 2rem;
+}
+.footer > p {
+  font-size: 1.3rem;
+  color: #f7d5a1;
+}
+.name-company {
+  color: #f7d5a1;
+}
+.name-company:hover {
+  color: darkred;
+  text-decoration: none;
+}
+.links-header {
+  color: #f7d5a1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 12rem;
+}
+.links-header > h5 {
+  font-size: 0.9rem;
+}
+.links-header > h5:hover {
+  color: darkred;
+  text-decoration: none;
+}
+.products-component {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card-produto {
+  background-color: #f7ede2;
+  width: 16rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: transparent 1px solid;
+  margin: 2rem 2.5rem 0 2.5rem;
+}
+.card-produto:hover {
+  border: black 1px solid;
+}
+
+.imagem-produto {
+  width: 100%;
+}
+.card-produto > h1 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+.card-produto > h2 {
+  font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .header {
+    height: 7rem;
+    flex-direction: column;
+  }
+  .links-header {
+    width: 100%;
+    height: 2rem;
+    justify-content: space-between;
+  }
+  .links-header > h5 {
+    margin: 0;
+  }
+}
